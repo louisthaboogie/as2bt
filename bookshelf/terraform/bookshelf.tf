@@ -17,19 +17,19 @@ provider "google" {
 
 variable gce_vm_zone {
   description = "Compute engine zone value"
-  type = "string"
+  type = string
   default = "us-east1-b"
 }
 
 variable gcs_bucket_prefix {
   description = "gcs bucket prefix"
-  type = "string"
+  type = string
   default = "bookshelf"
 }
 
 variable gcs_bucket_location {
   description = "gcs bucket location"
-  type = "string"
+  type = string
   default = "us-east1"
 }
 
