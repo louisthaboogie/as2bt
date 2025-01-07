@@ -87,7 +87,7 @@ resource "google_compute_instance" "bookshelf_aerospike" {
 
   boot_disk {
     initialize_params {
-      image = "ubuntu-os-cloud/ubuntu-1804-lts"
+      image = "ubuntu-os-cloud/ubuntu-2004-lts"
       size = 50
       type = "pd-ssd"
     }
@@ -112,7 +112,6 @@ resource "google_compute_instance" "bookshelf_aerospike" {
       "monitoring-write",
       "service-control",
       "service-management",
-      "trace-append",
       "cloud-source-repos-ro",
       "https://www.googleapis.com/auth/bigtable.data"
     ]
